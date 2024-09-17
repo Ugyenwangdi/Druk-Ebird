@@ -81,94 +81,108 @@ function SpeciesDetails() {
         </div>
       </div>
 
-      <div className="species-table">
-        <div className="table-row">
-          <div className="table-cell">Species Name</div>
-          <div className="table-cell">{species.englishName}</div>
-        </div>
+      <div class="species-container">
+  <div class="species-row">
+    <div class="species-label">Species Name</div>
+    <div class="species-value">{species.englishName ? species.englishName : 'null'}</div>
+  </div>
 
-        <div className="table-row">
-          <div className="table-cell">
-            <span className="material-icons" style={{ color: "black" }}>
-              location_on
-            </span>
-            Location
-          </div>
-          <div className="table-cell"></div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Scientific Name</div>
-          <div className="table-cell">{species.scientificName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Order</div>
-          <div className="table-cell">{species.order}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Family Name</div>
-          <div className="table-cell">{species.familyName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Genus</div>
-          <div className="table-cell">{species.genus}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Species</div>
-          <div className="table-cell">{species.species}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Authority</div>
-          <div className="table-cell">{species.authority}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Group</div>
-          <div className="table-cell">{species.group}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Dzongkha Name</div>
-          <div className="table-cell">{species.dzongkhaName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Lho Name</div>
-          <div className="table-cell">{species.lhoName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Shar Name</div>
-          <div className="table-cell">{species.sharName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Kheng Name</div>
-          <div className="table-cell">{species.khengName}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">IUCN Status</div>
-          <div className="table-cell">{species.iucnStatus}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Cites Appendix</div>
-          <div className="table-cell">{species.citesAppendix}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Bhutan Schedule</div>
-          <div className="table-cell">{species.bhutanSchedule}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Residency</div>
-          <div className="table-cell">{species.residency}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Habitat</div>
-          <div className="table-cell">{species.habitat}</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Stats</div>
-          <div className="table-cell">300 Observations</div>
-        </div>
-        <div className="table-row">
-          <div className="table-cell">Description</div>
-          <div className="table-cell">{species.description}</div>
-        </div>
-      </div>
+  <div class="species-row">
+    <div class="species-label">Location</div>
+    <div class="species-value">{species.location ? species.location : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Scientific Name</div>
+    <div class="species-value">{species.scientificName ? species.scientificName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Order</div>
+    <div class="species-value">{species.order ? species.order : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Family Name</div>
+    <div class="species-value">{species.familyName ? species.familyName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Genus</div>
+    <div class="species-value">{species.genus ? species.genus : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Species</div>
+    <div class="species-value">{species.species ? species.species : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Authority</div>
+    <div class="species-value">{species.authority ? species.authority : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Group</div>
+    <div class="species-value">{species.group ? species.group : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Dzongkha Name</div>
+    <div class="species-value">{species.dzongkhaName ? species.dzongkhaName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Lho Name</div>
+    <div class="species-value">{species.lhoName ? species.lhoName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Shar Name</div>
+    <div class="species-value">{species.sharName ? species.sharName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Kheng Name</div>
+    <div class="species-value">{species.khengName ? species.khengName : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">IUCN Status</div>
+    <div class="species-value">{species.iucnStatus ? species.iucnStatus : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Cites Appendix</div>
+    <div class="species-value">{species.citesAppendix ? species.citesAppendix : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Bhutan Schedule</div>
+    <div class="species-value">{species.bhutanSchedule ? species.bhutanSchedule : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Residency</div>
+    <div class="species-value">{species.residency ? species.residency : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Habitat</div>
+    <div class="species-value">{species.habitat ? species.habitat : 'null'}</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Stats</div>
+    <div class="species-value">300 Observations</div>
+  </div>
+
+  <div class="species-row">
+    <div class="species-label">Description</div>
+    <div class="species-value">{species.description ? species.description : 'null'}</div>
+  </div>
+</div>
+
     </div>
   );
 }

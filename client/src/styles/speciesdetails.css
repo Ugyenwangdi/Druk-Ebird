@@ -35,7 +35,7 @@
   flex-direction: row-reverse;
 }
 .species-image1 {
-  width: 100%;
+  width: 70%;
   max-width: 700px;
   border: 1px solid #ccc;
   border-radius: 2%;
@@ -47,6 +47,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-left: 5%;
 }
 .img-bird {
   width: 100%;
@@ -56,6 +57,7 @@
 }
 .bird-name {
   font-size: 3rem;
+  width: 100%;
   font-weight: bold;
   padding: 2rem;
 }
@@ -160,6 +162,34 @@
   margin-left: 15px;
 }
 
+.species-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.species-row {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 5px 0;
+  padding-left: 10%;
+  gap: 2rem;
+}
+
+.species-label {
+  flex-basis: 40%;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.species-value {
+  flex-basis: 60%;
+  font-size: 1rem;
+}
+
+
 @media (max-width: 650px) {
   .species-image {
     display: none;
@@ -172,6 +202,35 @@
     gap: 10px;
     border-collapse: collapse;
     border-radius: 50px;
+  }
+
+  .species-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  .species-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    gap: 2rem;
+  }
+  
+  .species-label {
+    flex-basis: 50%;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .species-value {
+    flex-basis: 50%;
+    font-size: 1rem;
   }
 }
 
@@ -253,62 +312,4 @@
   .location {
     height: 90%;
   }
-}
-
-.species-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  border-collapse: collapse;
-  border-radius: 50px;
-}
-
-.table-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* .table-cell {
-  padding: 10px;
-  border: 2px solid #136d66;
-  border-radius: 8px;
-
-  box-shadow: inset 3px 3px 3px rgba(84, 173, 121, 0.5);
-
-} */
-.table-cell {
-  padding: 10px;
-  border: 1px solid #136d66;
-  border-radius: 2px;
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 0 1px rgba(124, 130, 129, 0.5),
-    0 0 2px 1px rgba(125, 139, 138, 0.2), inset 0 0 1px rgba(131, 107, 107, 0.2);
-}
-
-.table-row:hover {
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.table-cell:first-child {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.table-cell:nth-child(2) {
-  font-weight: bold;
-  color: rgb(172, 50, 5);
-}
-
-.table-cell span {
-  font-size: 14px;
 }
